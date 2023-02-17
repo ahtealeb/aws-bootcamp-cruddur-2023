@@ -13,3 +13,13 @@
 ```
 msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ```
+I attempted to run the command by typing in <em>aws</em> but I recieved an error
+
+```
+C:\Users\moi>aws
+'aws' is not recognized as an internal or external command,
+operable program or batch file.
+```
+I was able to resolve the error by closing command prompt, and opening it again.
+![image](https://user-images.githubusercontent.com/10183258/219794688-8358af9e-6c13-4d3a-9d16-a59101c8f74e.png)
+
