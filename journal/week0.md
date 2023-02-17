@@ -21,5 +21,15 @@ C:\Users\moi>aws
 operable program or batch file.
 ```
 I was able to resolve the error by closing command prompt, and opening it again.
-![image](https://user-images.githubusercontent.com/10183258/219794688-8358af9e-6c13-4d3a-9d16-a59101c8f74e.png)
+
+## Create a Budget
+I created my own Budget for $1 because I cannot afford any kind of spend. I did not create a second Budget because I was concerned of 
+budget spending going over the 2 budget free limit.
+![image](https://user-images.githubusercontent.com/10183258/219794971-5088bb65-fde7-4473-b67c-1eb5e69721d5.png)
+
+## Recreate Conceptual Diagram or Napkin Design
+![image](https://user-images.githubusercontent.com/10183258/219795444-c0ebb51d-e445-4490-8385-e2e3402999c2.png)
+
+## Recreate Logical Architectural Deisgn
+![image](https://user-images.githubusercontent.com/10183258/219795483-703b23d2-8575-4e64-9b91-12e49675837d.png)
 
