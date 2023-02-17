@@ -33,3 +33,5 @@ budget spending going over the 2 budget free limit.
 ## Recreate Logical Architectural Deisgn
 ![image](https://user-images.githubusercontent.com/10183258/219795483-703b23d2-8575-4e64-9b91-12e49675837d.png)
 
+## Example of Referncing a file in the codebase
+Example of me of referencing a file in my repo [budget.json.example] (week-1-again/aws/json/alarm-config.jso](https://github.com/ahtealeb/aws-bootcamp-cruddur-2023/blob/week-0/aws/json/budget.json.example)
