@@ -10,4 +10,6 @@
 ##### Update our .gitpod.yml to include the following task.
 ![image](https://user-images.githubusercontent.com/10183258/219793043-1ad2122c-7ee1-404f-956c-b3c552b5550a.png)
 
-
+```
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+```
