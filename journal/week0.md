@@ -35,3 +35,42 @@ budget spending going over the 2 budget free limit.
 
 ## Example of Referncing a file in the codebase
 Example of me of referencing a file in my repo [budget.json.example](https://github.com/ahtealeb/aws-bootcamp-cruddur-2023/blob/week-0/aws/json/budget.json.example)
+
+## Code Example
+```
+{
+  "AlarmName": "DailyEstimatedCharges",
+  "AlarmDescription": "This alarm would be triggered if the daily estimated charges exceeds 1$",
+  "ActionsEnabled": true,
+  "AlarmActions": [
+      "arn:aws:sns:ca-central-1:***REMOVED***:billing-alarm"
+  ],
+  "EvaluationPeriods": 1,
+  "DatapointsToAlarm": 1,
+  "Threshold": 1,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+  "TreatMissingData": "breaching",
+  "Metrics": [{
+      "Id": "m1",
+      "MetricStat": {
+          "Metric": {
+              "Namespace": "AWS/Billing",
+              "MetricName": "EstimatedCharges",
+              "Dimensions": [{
+                  "Name": "Currency",
+                  "Value": "USD"
+              }]
+          },
+          "Period": 86400,
+          "Stat": "Maximum"
+      },
+      "ReturnData": false
+  },
+  {
+      "Id": "e1",
+      "Expression": "IF(RATE(m1)>0,RATE(m1)*86400,0)",
+      "Label": "DailyEstimatedCharges",
+      "ReturnData": true
+  }]
+}
+```
